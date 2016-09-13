@@ -58,14 +58,14 @@
 
 	var INITIAL_STATE = {
 	  players: [{
-	    name: "Jim Hoskins",
-	    score: 31
+	    name: "North America",
+	    score: 12
 	  }, {
-	    name: "Andrew Chalkley",
-	    score: 20
+	    name: "French",
+	    score: 7
 	  }, {
-	    name: "Alena Holligan",
-	    score: 50
+	    name: "UK",
+	    score: 6
 	  }]
 	};
 
@@ -128,7 +128,7 @@
 	    _react2.default.createElement(
 	      'h1',
 	      null,
-	      'Scoreboard'
+	      'Climbing Grade Converter'
 	    ),
 	    _react2.default.createElement(Stopwatch, null)
 	  );

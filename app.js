@@ -1,19 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './css/style.css';
 
 const INITIAL_STATE = {
   players: [
     {
-      name: "Michael Schennum",
-      score: 31,
+      name: "V0",
+      score: 0,
     },
     {
-      name: "Joe Blow",
-      score: 20,
+      name: "V1",
+      score: 0,
     },
     {
-      name: "Sammy Samson",
-      score: 50,
+      name: "V2",
+      score: 0,
+    },
+    {
+      name: "V3",
+      score: 0,
     },
   ],
 }
@@ -66,7 +71,7 @@ function Header(props) {
   return (
     <div className="header">
       <Stats players={props.players} />
-      <h1>Scoreboard</h1>
+      <h1>Boulder Buddy</h1>
       <Stopwatch />
     </div>
   );
@@ -85,10 +90,10 @@ function Stats(props) {
   return (
     <table className="stats">
       <tbody>
-        <tr>
+        {/* <tr>
           <td>Players:</td>
           <td>{playerCount}</td>
-        </tr>
+        </tr> */}
         <tr>
           <td>Total Points:</td>
           <td>{totalPoints}</td>
@@ -237,9 +242,9 @@ const AddPlayerForm = React.createClass({
             type="text"
             value={this.state.name}
             onChange={this.onNameChange}
-            placeholder="Player Name"
+            placeholder="Enter A New Grade"
           />
-          <input type="submit" value="Add Player" />
+          <input type="submit" value="Add Grade" />
         </form>
       </div>
     );
