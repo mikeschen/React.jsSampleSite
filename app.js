@@ -20,6 +20,22 @@ const INITIAL_STATE = {
       name: "V3",
       score: 0,
     },
+    {
+      name: "V4",
+      score: 0,
+    },
+    {
+      name: "V5",
+      score: 0,
+    },
+    {
+      name: "V6",
+      score: 0,
+    },
+    {
+      name: "V7",
+      score: 0,
+    },
   ],
 }
 
